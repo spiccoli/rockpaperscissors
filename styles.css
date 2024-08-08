@@ -48,50 +48,8 @@ h1 {
     font-size: 4.5rem;
     text-align: center;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 4rem;
-    }
-
-    .choice button {
-        font-size: 8rem;
-        width: 40vw;
-        height: 40vw;
-        max-width: 120px;
-        max-height: 120px;
-    }
-
-    #playerChoice, #computerChoice {
-        font-size: 2.5rem;
-    }
-
-    #result {
-        font-size: 3rem;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 3rem;
-    }
-
-    .choice button {
-        font-size: 6rem;
-        width: 45vw;
-        height: 45vw;
-        max-width: 100px;
-        max-height: 100px;
-    }
-
-    #playerChoice, #computerChoice {
-        font-size: 2rem;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    #result {
-        font-size: 2.5rem;
-    }
+#playerChoice, #computerChoice {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
 }
