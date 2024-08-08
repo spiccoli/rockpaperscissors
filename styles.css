@@ -42,11 +42,6 @@ h1 {
     transform: scale(0.95);
 }
 
-#playerChoice, #computerChoice {
-    text-align: center;
-    margin-top: 10px;
-}
-
 #result {
     font-weight: bold;
     margin-top: 20px;
@@ -92,6 +87,8 @@ h1 {
 
     #playerChoice, #computerChoice {
         font-size: 2rem;
+        text-align: center;
+        margin-top: 20px;
     }
 
     #result {
