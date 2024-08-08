@@ -1,35 +1,101 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: hsl(57, 54%, 86%);
-    min-height: 100vh;  
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
 }
-h1{
+
+h1 {
     font-size: 6.5rem;
+    text-align: center;
 }
-.choice button{
+
+.choice {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.choice button {
     font-size: 10rem;
-    margin: 20px;
-    margin-bottom: 100px;
+    margin: 10px;
     background-color: hsl(57, 80%, 86%);
-    border: 1px solid rgba(0, 0, 0, 0.557) ;
-    border-radius: 8px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* The magic shadow! */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+    border: 1px solid rgba(0, 0, 0, 0.557);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
+    width: 30vw;
+    height: 30vw;
+    max-width: 150px;
+    max-height: 150px;
 }
-.choice button:active{
+
+.choice button:active {
     background-color: hsl(57, 80%, 90%);
     transform: scale(0.95);
 }
-#playerChoice, #computerChoice{
+
+#playerChoice, #computerChoice {
     font-size: 3rem;
+    text-align: center;
+    margin-top: 10px;
 }
-#result{
+
+#result {
     font-weight: bold;
     margin-top: 20px;
     font-size: 4.5rem;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .choice button {
+        font-size: 8rem;
+        width: 40vw;
+        height: 40vw;
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    #playerChoice, #computerChoice {
+        font-size: 2.5rem;
+    }
+
+    #result {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .choice button {
+        font-size: 6rem;
+        width: 45vw;
+        height: 45vw;
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    #playerChoice, #computerChoice {
+        font-size: 2rem;
+    }
+
+    #result {
+        font-size: 2.5rem;
+    }
 }
